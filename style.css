@@ -8,6 +8,8 @@ html,
 body {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 html {
@@ -16,4 +18,37 @@ html {
 
 #canvas {
   image-rendering: pixelated;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.toolbar {
+  padding-top: 40px;
+}
+
+.toolbar-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+}
+
+.toolbar .toolbar-btn {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.toolbar-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.toolbar-btn img:hover {
+  transform: scale(1.1);
 }
