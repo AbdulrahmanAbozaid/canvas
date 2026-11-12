@@ -7,7 +7,37 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <canvas height="1400" width="1400" id="canvas"></canvas>
+    <main class="main">
+      <nav class="toolbar">
+        <ul class="toolbar-list">
+          <li>
+            <button class="toolbar-btn">
+              <img src="./icons/icons8-pen-50.png" alt="pen" />
+            </button>
+          </li>
+          <li>
+            <button class="toolbar-btn">
+              <img src="./icons/icons8-highlighter-50.png" alt="highlighter" />
+            </button>
+          </li>
+          <li>
+            <button class="toolbar-btn">
+              <img src="./icons/icons8-erase-50.png" alt="erase" />
+            </button>
+          </li>
+          <li>
+            <button class="toolbar-btn">
+              <img src="./icons/icons8-sheet-32.png" alt="Sticky Note" />
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <section class="workspace">
+        <div class="canvas-container">
+          <canvas id="canvas" width="1400" height="1400"></canvas>
+        </div>
+      </section>
+    </main>
 
     <script src="./index.js"></script>
   </body>
